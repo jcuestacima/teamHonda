@@ -1,0 +1,17 @@
+<h1>Team Honda</h1>
+<hr>
+<div class="row">
+
+  <div class="col">
+    <h4>Coches</h4>
+    <carsList [carsList]="cars"
+    (onDelete) = "onDeleteCar($event)"
+    ></carsList>
+  </div>
+
+  <div class="col">
+    <h4>Agregar coche</h4>
+    <teamHonda-addCar (onNewCar)="onNewCar($event)"></teamHonda-addCar>
+  </div>
+
+</div>

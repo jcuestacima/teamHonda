@@ -1,0 +1,18 @@
+<h1>heroes</h1>
+<h3>Listado de coches</h3>
+
+<ul class="mt-2 list-group">
+  <li  *ngFor="let coche of coches" class="list-group-item">{{coche}}</li>
+</ul>
+
+<button *ngIf="coches.length>0" class="btn btn-outline-danger" (click)="deletelastcar()">Borrar coche</button>
+
+<div *ngIf="deletedcar; else nothingDeleted">
+  <h3>Coche borrado <small class="text-danger">{{deletedcar}} </small> </h3>
+
+</div>
+
+<ng-template #nothingDeleted>
+  <h3>No ha borrado nada</h3>
+</ng-template>
+

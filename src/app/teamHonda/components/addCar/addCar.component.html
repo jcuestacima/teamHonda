@@ -1,0 +1,7 @@
+<form class="row" (ngSubmit)="addCar()">
+  <input name="model" type="text"  [(ngModel)]="car.modelo" placeholder="Modelo" class="form-control mb-2">
+  <input name="hp" type="number" [(ngModel)]="car.cv" placeholder="Caballos" class="form-control mb-2">
+  <input name="photo" type="text" [(ngModel)]="car.foto" placeholder="URL imagen" class="form-control mb-2">
+  <button type="submit" class="btn btn-primary">Añadir</button>
+
+</form>
